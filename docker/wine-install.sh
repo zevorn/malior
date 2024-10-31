@@ -102,7 +102,7 @@ if [ ! -e $MALIOR_HOME/.local/malior/bin/winetricks ]; then
     malior-sudo "apt-get install cabextract -y"                                                                   # winetricks needs this installed
     malior-sudo "mv /usr/local/bin/winetricks /usr/local/bin/winetricks-old"                                      # Backup old winetricks
     cd $MALIOR_HOME/.local/malior/Downloads \
-        && wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks # Download
+        && wget https://ghp.ci/https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks # Download
     malior "cd /home/player/.local/malior/Downloads && \
 chmod +x winetricks && mv winetricks /home/player/.local/malior/bin/ \
 "
